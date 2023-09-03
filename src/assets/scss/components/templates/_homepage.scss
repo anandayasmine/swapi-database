@@ -1,0 +1,44 @@
+.templates-homepage{
+  display: grid;
+  gap: 0.5rem;
+
+  .block{
+    &-items{
+      border-collapse: collapse;
+
+      .card{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 1rem;
+        box-sizing: border-box;
+        border-collapse: collapse;
+        border: 1px solid transparent;
+        
+        &:not(:last-child){
+          border-bottom: 1px solid #ddd;
+          margin-bottom: .3rem;
+          
+        }
+        
+        &:hover{
+          background-color: #ddd;
+          border-radius: 1rem;
+        }
+
+        &-head{
+          .title{
+            color: black;
+  
+          }
+
+        }
+        &-detail{
+          display: grid;
+          justify-items: end;
+        }
+      }
+    }
+  }
+
+}

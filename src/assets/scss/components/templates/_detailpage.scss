@@ -1,0 +1,48 @@
+.templates-detailpage{
+  display: grid;
+  gap: 0.5rem;
+
+  .block{
+    &-header{
+      .wrap-button-back{
+        button{
+          background-color: transparent;
+          cursor: pointer;
+
+          border-radius: 1rem;
+          border: unset;
+          padding: .3rem 1rem;
+          background-color: #ddd;
+          color: #8b8b8b;
+
+
+          &:hover{
+            background-color: #8b8b8b;
+            color: white;
+          }
+
+        }
+      }
+    }
+    &-body{
+      &.empty{
+        background-color: #ddd;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+
+        p{
+          color: #8b8b8b;
+        }
+      }
+      table{
+        gap: 1rem;
+      }
+      th,
+      td{
+        text-align: left;
+      }
+    }
+  }
+
+}
