@@ -224,12 +224,19 @@ export default class HomePage extends Component {
                       <div className='card-head'>
                         <h2 className='text-title'>{item?.name}</h2>
                         <p>
-                          <span>Born </span><span className='text-subtitle-1'>{item?.birth_year}</span>
+                          <span>Birth Year : </span><span className='text-subtitle-1'>{item?.birth_year}</span>
                         </p>
                       </div>
                       <div className='card-detail'>
+                        <div className='stack'>
+                        <p>Skin Color : </p>
                         <h3>{item?.skin_color}</h3>
-                        <p>{item?.hair_color}</p>
+
+                        </div>
+                        <div className='stack'>
+                        <p>Hair Color : </p>
+                        <p><b>{item?.hair_color}</b></p>
+                        </div>
                       </div>
                     </div>
 

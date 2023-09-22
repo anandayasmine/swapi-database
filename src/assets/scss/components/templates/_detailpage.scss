@@ -12,8 +12,8 @@
           border-radius: 1rem;
           border: unset;
           padding: .3rem 1rem;
-          background-color: #ddd;
-          color: #8b8b8b;
+          // background-color: #ddd;
+          border: 1px solid #8b8b8b;
 
 
           &:hover{
@@ -36,7 +36,16 @@
         }
       }
       table{
-        gap: 1rem;
+        tr:not(:last-child){
+          th,
+          td{
+            padding-bottom: 1rem;
+
+          }
+        }
+        .divider{
+          padding-left: 1rem;
+        }
       }
       th,
       td{

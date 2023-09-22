@@ -124,19 +124,39 @@ export default class DetailPage extends Component {
             <div className={'block-body ' + (data.text ? '' : 'empty')}>
               <table>
                 <tr>
-                  <td>Born</td>
-                  <td> : </td>
+                  <td>Birth Year</td>
+                  <td className='divider'> : </td>
                   <th>{data?.birth_year}</th>
                 </tr>
                 <tr>
-                  <td>Body Mass</td>
-                  <td> : </td>
+                  <td>Hair Color</td>
+                  <td className='divider'> : </td>
                   <th>{data?.hair_color}</th>
                 </tr>
                 <tr>
+                  <td>Skin Color</td>
+                  <td className='divider'> : </td>
+                  <th>{data?.skin_color}</th>
+                </tr>
+                <tr>
                   <td>Height</td>
-                  <td> : </td>
+                  <td className='divider'> : </td>
                   <th>{data?.height} cm</th>
+                </tr>
+                <tr>
+                  <td>Mass</td>
+                  <td className='divider'> : </td>
+                  <th>{data?.mass}</th>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td className='divider'> : </td>
+                  <th>{data?.gender}</th>
+                </tr>
+                <tr>
+                  <td>Eye Color</td>
+                  <td className='divider'> : </td>
+                  <th>{data?.eye_color}</th>
                 </tr>
               </table>
             </div>
